@@ -1,0 +1,102 @@
+Profil 1 : Abdelhamid Fadel
+Nom complet : Abdelhamid Fadel
+Date de naissance : 29 novembre 2000
+Téléphone : +212767347766
+Email : fadelabdelhamid1@gmail.com
+Adresse : El Jadida, Maroc
+Résumé professionnel :
+Étudiant passionné en ingénierie logicielle, à la recherche d’opportunités pour acquérir de nouvelles compétences et appliquer mes connaissances en programmation. Je possède de solides compétences techniques dans les langages de programmation tels que Java, JavaScript et C, ainsi qu'une maîtrise des technologies Web comme Java Enterprise Edition (JEE) et Node.js. Je recherche un environnement de travail stimulant où je peux apprendre, évoluer et contribuer à des projets de développement de logiciels passionnants.
+Liens :
+https://www.linkedin.com/in/fadelabdelhamid/
+https://twitter.com/a_fadel_dev/
+Éducation :
+Master en Qualité du Logiciel (MQL), FSDM - Université Sidi Mohammed ben Abdellah - Fès (2025)
+Licence Professionnelle - Ingénierie des Systèmes d'Information et Réseaux, EST Safi - Université Cadi Ayyad - Safi (2021)
+Diplôme Universitaire de Technologie - Génie Informatique, EST Safi - Université Cadi Ayyad - Safi (2020)
+Baccalauréat, Lycée Abou Chouaib Doukkali - El Jadida (2018)
+Compétences technologiques :
+Jakarta Enterprise Edition (JEE) :
+Architecture 3 tiers, Modèle MVC2, Servlets et JSP, Modèle DAO, Framework Spring / Spring Boot, JPA, Hibernate, Administration Tomcat
+Ingénierie du Web :
+HTML, CSS, JavaScript, Node.js, React, Express.js, PHP
+Ingénierie DevOps :
+Maven, Git, GitHub, GitLab, Jira, JUnit
+Bases de données :
+MySQL, PostgreSQL, MongoDB, Oracle Database
+Analyse et conception :
+UML, MERISE, Design Patterns
+Web Services :
+REST, SOAP
+Technologies XML :
+Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery
+Expériences :
+Stage, Laboratoire LAPSSI ESTS - Safi (2021)
+Titre : Estimation des mesures du corps humain à partir d’images, en utilisant des techniques de Computer vision
+Technologies : Python, TensorFlow, Keras
+Durée : 2 mois
+Stage, Laboratoire LAPSSI ESTS - Safi (2020)
+Titre : Détection des maladies des plantes à partir des images en utilisant des techniques de Computer vision
+Technologies : Python, TensorFlow, Keras
+Durée : 2 mois
+Stage, OCP Jorf Lasfar (2019)
+Titre : Développement d’une application web pour la gestion des réparations du matériel
+Technologies : HTML, CSS, JavaScript, PHP, MySQL
+Durée : 2 mois
+Compétences comportementales :
+Créativité, Curiosité, Flexibilité, Autonomie, Adaptabilité, Sens du détail, Bonne communication, Gestion de l’information
+Langues :
+Français : B2 (Certificat TCF)
+Anglais : C1
+Arabe : Langue maternelle
+Centres d'intérêt :
+Jeux d'échecs, Jeux vidéo, Formule 1, Volleyball
+Profil 2 : Amine Hmidani Filali
+Nom complet : Amine Hmidani Filali
+Date de naissance : 26 avril 2001
+Téléphone : 0651638496
+Email : hmidanifilaliamine@gmail.com
+Adresse : Meknès, Maroc
+Résumé professionnel :
+Passionné par l'intelligence artificielle, la science des données et le développement web, je suis titulaire d'une licence professionnelle en Intelligence Artificielle et Sciences des Données ainsi que d'un DUT en Génie Logiciel. Grâce à des formations en ligne et académiques, j'ai acquis des compétences en codage dans divers langages informatiques et en conception de systèmes d'information. J'ai une expérience solide dans l'analyse de données et le développement de solutions d'IA, ainsi qu'une capacité à collaborer efficacement avec des équipes interdisciplinaires.
+Liens :
+https://www.linkedin.com/in/amine-hmidani-filali-20083723a/
+Éducation :
+Master MQL, FSDM - Université Sidi Mohammed ben Abdellah - Fès (2025)
+Licence Professionnelle - Intelligence Artificielle et Sciences des Données, EST Meknès - Université Moulay Ismail - Meknès (2023)
+Diplôme Universitaire de Technologie - Génie Logiciel, EST Meknès - Université Moulay Ismail - Meknès (2022)
+Baccalauréat en Sciences Mathématiques option A, Lycée Marjiaa - Meknès (2019)
+Compétences technologiques :
+Jakarta EE :
+Architecture 3 tiers, Modèle MVC2, Servlets et JSP, Modèle DAO, JPA, Hibernate, Spring - Spring Boot
+Ingénierie du Web :
+HTML, CSS, JavaScript, Node.js, React, PHP, Vue.js
+Analyse et conception :
+UML, MERISE, Design Patterns
+Ingénierie DevOps :
+Maven, Jira, Git, GitHub, GitLab, JUnit
+Web Services :
+REST
+Technologies XML :
+Standard XML, Bases de données XML, Parseurs XML (DOM, SAX), DTD, XSD (XML Schema), XSLT, XPath, XQuery
+Data Science :
+Analyse de données, visualisation de données, Machine Learning, Deep Learning, Modélisation des séries temporelles, NLP, AutoML, Python, TensorFlow, Keras
+Expériences :
+Stage, 3D Smart Factory (2023)
+Titre : Amélioration d'une plateforme de recrutement avec NLP et technologies web
+Technologies : Django REST framework, NextJs, SpaCy, TensorFlow
+Durée : 2 mois
+Stage, CloudLink (2022)
+Titre : Création d'une application web de streaming de musique pour augmenter la popularité des artistes
+Technologies : HTML, CSS, JavaScript, PHP, Laravel, VueJS
+Durée : 2 mois
+Stage, INFO-MARKET (2021)
+Titre : Développement d'une application web de gestion des ordres de réparation, enregistrant les informations et générant des rapports détaillés avec reçu pour les clients
+Technologies : HTML, CSS, JavaScript, PHP, Ajax, jQuery
+Durée : 1 mois
+Compétences comportementales :
+Esprit d'équipe, Créativité, Analyse, Rigueur
+Langues :
+Français : B2
+Anglais : B2
+Centres d'intérêt :
+BasketBall, Voyage, Jeux Vidéo, Jeux d'échecs
