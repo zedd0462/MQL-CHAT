@@ -4,6 +4,8 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -12,8 +14,8 @@ public class ChatAiService {
 
     private final ChatClient chatClient;
 
-    // Chemin absolu du fichier
-    private static final String FILE_PATH = "src/main/resources/cvs.txt";
+    // Nom du fichier (à chercher dans les ressources)
+    private static final String FILE_NAME = "cvs.txt";
 
     public ChatAiService(ChatClient.Builder builder) {
         this.chatClient = builder.build();
@@ -27,8 +29,8 @@ public class ChatAiService {
      */
     public String ragChatWithFixedFile(String question) {
         try {
-            // Lire le contenu du fichier
-            String fileContent = Files.readString(Path.of(FILE_PATH));
+            // Lire le contenu du fichier depuis les ressources
+            String fileContent = readFileFromResources(FILE_NAME);
             // Construire le prompt
             String prompt = buildPrompt(question, fileContent);
             // Envoyer la requête à l'IA
@@ -49,6 +51,22 @@ public class ChatAiService {
      * @return Le prompt complet.
      */
     private String buildPrompt(String question, String context) {
-        return "Voici des informations contextuelles à considérer :\n" + context + "\n\nQuestion : " + question+ "\n\n etre concise dans la réponse ";
+        return "Voici des informations contextuelles à considérer :\n" + context + "\n\nQuestion : " + question + "\n\n être concise dans la réponse ";
+    }
+
+    /**
+     * Lit le contenu d'un fichier dans les ressources du classpath.
+     *
+     * @param fileName Le nom du fichier.
+     * @return Le contenu du fichier sous forme de chaîne.
+     * @throws IOException Si une erreur de lecture survient.
+     */
+    private String readFileFromResources(String fileName) throws IOException {
+        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName)) {
+            if (inputStream == null) {
+                throw new IOException("Fichier non trouvé : " + fileName);
+            }
+            return new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+        }
     }
 }
