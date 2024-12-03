@@ -13,7 +13,7 @@ public class ChatAiService {
     private final ChatClient chatClient;
 
     // Chemin absolu du fichier
-    private static final String FILE_PATH = "C:\\Users\\AMINE-HF\\Downloads\\jakartaee-rest\\MQL-chatRG\\src\\main\\resources\\cvs.txt";
+    private static final String FILE_PATH = "src/main/resources/cvs.txt";
 
     public ChatAiService(ChatClient.Builder builder) {
         this.chatClient = builder.build();
