@@ -24,25 +24,19 @@ public class ChatAiService {
 
     public String ragChatWithFixedFile(String question) {
         try {
+
             String fileContent = readFileFromResources(FILE_NAME);
+
             String prompt = buildPrompt(question, fileContent);
 
-            String response = chatClient.prompt()
+            return chatClient.prompt()
                     .user(prompt)
                     .call()
                     .content();
-
-            // Validation : vérifier que la réponse contient des éléments du fichier
-            if (!response.toLowerCase().contains("les informations fournies") && !fileContent.toLowerCase().contains(response.toLowerCase())) {
-                return "Réponse jugée hors contexte. Impossible de répondre à la question avec les informations disponibles.";
-            }
-
-            return response;
         } catch (IOException e) {
             return "Erreur lors de la lecture du fichier : " + e.getMessage();
         }
     }
-
 
 
     private String buildPrompt(String question, String context) {
