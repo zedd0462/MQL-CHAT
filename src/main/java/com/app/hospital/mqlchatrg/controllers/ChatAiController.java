@@ -17,12 +17,7 @@ public class ChatAiController {
         this.chatAiService = chatAiService;
     }
 
-    /**
-     * Endpoint pour poser une question en ajoutant un contexte provenant d'un fichier fixé.
-     *
-     * @param question La question posée.
-     * @return La réponse de l'IA.
-     */
+
     @GetMapping(value = "/ask", produces = MediaType.TEXT_PLAIN_VALUE)
     public String ask(@RequestParam String question) {
         return chatAiService.ragChatWithFixedFile(question);
