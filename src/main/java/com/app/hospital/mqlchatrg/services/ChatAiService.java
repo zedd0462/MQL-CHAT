@@ -24,24 +24,35 @@ public class ChatAiService {
 
     public String ragChatWithFixedFile(String question) {
         try {
-
             String fileContent = readFileFromResources(FILE_NAME);
-
             String prompt = buildPrompt(question, fileContent);
 
-            return chatClient.prompt()
+            String response = chatClient.prompt()
                     .user(prompt)
                     .call()
                     .content();
+
+            // Validation : vérifier que la réponse contient des éléments du fichier
+            if (!response.toLowerCase().contains("les informations fournies") && !fileContent.toLowerCase().contains(response.toLowerCase())) {
+                return "Réponse jugée hors contexte. Impossible de répondre à la question avec les informations disponibles.";
+            }
+
+            return response;
         } catch (IOException e) {
             return "Erreur lors de la lecture du fichier : " + e.getMessage();
         }
     }
 
 
+
     private String buildPrompt(String question, String context) {
-        return "Voici des informations contextuelles à considérer :\n" + context + "\n\nQuestion : " + question + "\n\n être concise dans la réponse ";
+        return "Vous êtes un assistant intelligent. Répondez uniquement en utilisant les informations suivantes :\n"
+                + context
+                + "\n\nNe faites aucune supposition en dehors de ces informations. Si la réponse ne peut pas être déterminée avec ces informations, répondez : 'Les informations fournies ne permettent pas de répondre à cette question.'\n\n"
+                + "Question : " + question
+                + "\n\nRéponse :";
     }
+
 
 
     private String readFileFromResources(String fileName) throws IOException {
